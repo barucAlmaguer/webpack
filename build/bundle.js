@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 1);
+/******/ 	return __webpack_require__(__webpack_require__.s = 2);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -73,14 +73,10 @@
 "use strict";
 
 
-// Utility functions for working with mathematical calculations
+var image = document.createElement('img');
+image.src = 'https://valiot.io/img/eliot-about.png';
 
-var sum = function sum(a, b) {
-  return a + b;
-};
-
-module.exports = sum;
-// export sum
+document.body.appendChild(image);
 
 /***/ },
 /* 1 */
@@ -89,9 +85,33 @@ module.exports = sum;
 "use strict";
 
 
-var sum = __webpack_require__(0);
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+// Utility functions for working with mathematical calculations
 
-var total = sum(10, 5);
+var sum = function sum(a, b) {
+  return a + b;
+};
+
+exports.default = sum;
+
+/***/ },
+/* 2 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _sum = __webpack_require__(1);
+
+var _sum2 = _interopRequireDefault(_sum);
+
+__webpack_require__(0);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var total = (0, _sum2.default)(10, 5);
 console.log(total);
 
 /***/ }
