@@ -1,0 +1,17 @@
+{
+  "name": "js_modules",
+  "version": "1.0.0",
+  "description": "webpack hello world",
+  "main": "index.js",
+  "author": "Baruc",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "webpack": "^2.2.0-rc.0"
+  }
+}
